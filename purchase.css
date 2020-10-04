@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: #000000;
+    background-image: url(http://www.transparenttextures.com/patterns/diagmonds.png);
+}
+.codrops-top {
+	line-height: 24px;
+	font-size: 19px;
+	background: #fff;
+	background:  rgba(0, 0, 0, 0.5);
+	z-index: 4;
+	position: relative;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+	height: 55px;
+	position: fixed;
+	width: 100%;
+  top: 0;
+  font-family: "raleway", sans-serif;
+  font-weight: 400;
+}
+
+
+
+
+.codrops-top a strong  {
+  padding-right:30px;
+  padding-left: 3px;
+  padding-top: 0;
+  top: 0px;
+	letter-spacing: 1px;
+	color: #ffffff;
+  font-size: 20px;
+  
+}
+
+.codrops-top span.right {
+  float: right;
+  padding-right: 30px;
+  
+}
+
+.codrops-top span.right a {
+	float: left;
+  display: block;
+  padding-top: 12px;
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+  padding-right: 20px;
+
+}
+.section-header{
+    font-size: 40px;
+    padding-top: 5%;
+    position: relative;
+    color:#ffffff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #2D9CDB;
+    
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #7fff00;
+  
+}
+.shop-sport {
+    margin: 30px;
+}
+
+.shop-sport-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #F0F0F0;
+    margin-bottom: 15px;
+}
+
+.shop-sport-image {
+    height: 250px;
+}
+
+.shop-sport-details {
+    display: flex;
+    align-sports: center;
+    padding: 5px;
+}
+
+.shop-sport-price {
+    flex-grow: 1;
+    color: #F0F0F0;
+}
+.shop-sport-description {
+    color: #333;
+}
+
+.shop-sports {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #f0f0f0;
+}
+
+.cart-column {
+    display: flex;
+    align-sports: center;
+    border-bottom: 1px solid white;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-sport {
+    width: 45%;
+    margin-left: 0.5em;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #f0f0f0;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-sport-title {
+    color: #F0F0F0;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-sport-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+    
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+    
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+    
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #7fff00;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #F0F0F0;
+    font-size: 1.1rem;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+.cp-text{ color: rgba(255,255,255,.7); 
+	text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+	text-align: center;
+	width: 100%;
+	background-color: #000000;
+    padding: 0.5%;
+}
+
+@media screen and (max-width: 768px) {
+    .shop-sport-image {
+        width: 90%;
+    }
+    .section-header{
+        font-size: 25px;
+        padding-top: 13%;
+        
+    }
+    .codrops-top a strong  {
+        top: 0px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        font-size: 10px;
+        
+      }
+      .codrops-top{
+          height: 40px;
+      }
+      .shop-sport {
+        margin: 10px;
+    }
+    .cart-sport-image {
+        width: 40px;
+    }
+    .cart-header {
+        font-weight: bold;
+        font-size: 0.75em;
+        color: #f0f0f0;
+    }
+    
+    .cart-column {
+        display: flex;
+        align-sports: center;
+        border-bottom: 1px solid white;
+        margin-right: 0.75em;
+        padding-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    .cart-row {
+        display: flex;
+    }
+    
+    .cart-sport {
+        width: 45%;
+        margin-left: 0.2em;
+    }
+    
+    .cart-price {
+        width: 20%;
+        font-size: 0.75em;
+        color: #f0f0f0;
+    }
+    
+    .cart-quantity {
+        width: 35%;
+    }
+    
+    .cart-sport-title {
+        color: #F0F0F0;
+        margin-left: .5em;
+        font-size: 0.75em;
+    }
+    
+    
+    .btn-danger {
+        color: white;
+        background-color: #EB5757;
+        border: none;
+        border-radius: .3em;
+        font-weight: bold;
+    }
+    
+    .btn-danger:hover {
+        background-color: #CC4C4C;
+    }
+    
+    .cart-quantity-input {
+        height: 30px;
+        width: 40px;
+        border-radius: 5px;
+        border: 1px solid #56CCF2;
+        background-color: #eee;
+        color: #333;
+        padding: 0;
+        text-align: center;
+        font-size: 0.75em;
+        margin-right: 15px;
+    }
+    
+    .cart-row:last-child {
+        border-bottom: 1px solid black;
+        
+    }
+    
+    .cart-row:last-child .cart-column {
+        border: none;
+        
+    }
+    
+    .cart-total {
+        text-align: end;
+        margin-top: 10px;
+        margin-right: 10px;
+        
+        
+    }
+    
+    .cart-total-title {
+        font-weight: bold;
+        font-size: 0.9em;
+        color: #7fff00;
+        margin-right: 20px;
+    }
+    
+    .cart-total-price {
+        color: #F0F0F0;
+        font-size: 1.1em;
+    }
+    
+
+}

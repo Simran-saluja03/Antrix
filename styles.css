@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800');
+ * {
+	 box-sizing: border-box;
+	 margin: 0;
+	 padding: 0;
+	 overflow-x: hidden;
+}
+ html, body {
+	 margin: 0;
+	 background: black;
+	 font-family: 'Montserrat', helvetica, arial, sans-serif;
+	 font-size: 14px;
+	 font-weight: 400;
+	 
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+body{
+	background-color: #000000;
+background-image: url(http://www.transparenttextures.com/patterns/diagmonds.png);
+}
+.codrops-top {
+	line-height: 24px;
+	font-size: 19px;
+	background: #fff;
+	background:  rgba(0, 0, 0, 0.5);
+	z-index: 4;
+	position: relative;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+	height: 55px;
+	position: fixed;
+	width: 100%;
+  top: 0;
+  font-family: "raleway", sans-serif;
+  font-weight: 400;
+}
+
+
+
+
+.codrops-top a strong  {
+  padding-right:30px;
+  padding-left: 3px;
+  padding-top: 0;
+  top: 0px;
+	letter-spacing: 1px;
+	color: #ffffff;
+  font-size: 40px;
+  
+}
+.codrops-top img {
+margin-left: 40px;
+margin-top: 9px;
+color: #ffffff;
+display: inline-block;
+padding-right: 0;
+  
+}
+
+
+.codrops-top span.right {
+  float: right;
+  padding-right: 30px;
+  
+}
+
+.codrops-top span.right a {
+	float: left;
+  display: block;
+  padding-top: 12px;
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+  padding-right: 20px;
+
+}
+
+.heading {
+    color: #F0F0F0;
+	font-size: 50px;
+	z-index: 1;
+	position: relative;
+	top: 40%;
+
+}
+
+
+.full-screen-video-container {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-sports: flex-start;
+  }
+  
+  .full-screen-video-container video {
+	z-index: 0;
+	position: absolute;
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+ .sport_card {
+	 position: relative;
+	 display: block;
+	 width: 800px;
+	 height: 350px;
+	 margin: 100px auto;
+	 overflow: hidden;
+	 border-radius: 10px;
+	 transition: all 0.4s;
+}
+ .sport_card:hover {
+	 transform: scale(1.02);
+	 transition: all 0.4s;
+}
+ .sport_card .info_section {
+	 position: relative;
+	 width: 100%;
+	 height: 100%;
+	 background-blend-mode: multiply;
+	 z-index: 2;
+	 border-radius: 10px;
+}
+ .sport_card .info_section .sport_header {
+	 position: relative;
+	 padding: 25px;
+	 height: 40%;
+}
+ .sport_card .info_section .sport_header h1 {
+	 color: #fff;
+	 font-weight: 400;
+}
+ .sport_card .info_section .sport_header h4 {
+	 color: #9ac7fa;
+	 font-weight: 400;
+}
+ .sport_card .info_section .sport_header .minutes {
+	 display: inline-block;
+	 margin-top: 10px;
+	 color: #fff;
+	 padding: 6px;
+	 border-radius: 5px;
+	 border: 1px solid rgba(255, 255, 255, 0.13);
+}
+ .sport_card .info_section .sport_header .type {
+	display: inline-block;
+	color: #cee4fd;
+	margin-left: 10px;
+	 
+}
+ .sport_card .info_section .sport_header .locandina {
+	 position: relative;
+	 float: left;
+	 margin-right: 20px;
+	 height: 120px;
+	 box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
+}
+ .sport_card .info_section .sport_desc {
+	 padding: 25px;
+	 height: 50%;
+}
+ .sport_card .info_section .sport_desc .text {
+	 color: #cfd6e1;
+}
+ .sport_card .blur_back {
+	 position: absolute;
+	 top: 0;
+	 z-index: 1;
+	 height: 100%;
+	 right: 0;
+	 background-size: cover;
+	 border-radius: 11px;
+}
+ @media screen and (min-width: 768px) {
+	 .sport_header {
+		 width: 60%;
+	}
+	 .sport_desc {
+		 width: 50%;
+	}
+	 .info_section {
+		 background: linear-gradient(to right, #0d0d0c 50%, transparent 100%);
+	}
+	 .blur_back {
+		 width: 80%;
+		 background-position: -100% 10% !important;
+	}
+}
+ @media screen and (max-width: 768px) {
+	 .sport_card {
+		 width: 95%;
+		 margin: 70px auto;
+		 min-height: 330px;
+		 height: auto;
+	}
+	 .blur_back {
+		 width: 100%;
+		 background-position: 50% 50% !important;
+	}
+	 .sport_header {
+		 width: 100%;
+		 margin-top: 85px;
+	}
+	 .sport_desc {
+		 width: 100%;
+	}
+	 .info_section {
+		 background: linear-gradient(to top, #141413 50%, transparent 100%);
+		 display: block;
+	}
+	.heading{
+		text-align: center;
+	}
+}
+ #quidditch {
+	 box-shadow: 0px 0px 150px -45px rgba(161, 152, 150, 0.705);
+}
+ #quidditch:hover {
+	 box-shadow: 0px 0px 120px -55px rgba(161, 152, 150, 0.705);
+}
+ .quidditch_back {
+	 background: url("https://ik.imagekit.io/1xa1de3jal/Games/quidditch_03V0t7TKh.jpeg");
+}
+ #polo {
+	 box-shadow: 0px 0px 150px -45px rgba(182, 96, 25, 0.726);
+}
+ #polo:hover {
+	 box-shadow: 0px 0px 120px -55px rgba(182, 96, 25, 0.726);
+}
+ .polo_back {
+	 background: url("https://ik.imagekit.io/1xa1de3jal/Games/rover_RNGGO9Xmq.jpg");
+}
+ #volleyball {
+	 box-shadow: 0px 0px 150px -45px rgba(67, 203, 221, 0.7);
+	 margin-bottom: 200px;
+}
+ #volleyball:hover {
+	 box-shadow: 0px 0px 120px -55px rgba(67, 203, 221, 0.7);
+}
+ .volleyball_back {
+	 background: url("https://ik.imagekit.io/1xa1de3jal/Games/beach-volleyball-player_4saYvXk2i.jpg");
+}
+#pool {
+	box-shadow: 0px 0px 150px -45px rgba(87, 38, 179, 0.7);
+	margin-bottom: 200px;
+}
+#pool:hover {
+	box-shadow: 0px 0px 120px -55px rgba(87, 38, 179, 0.7);
+}
+.pool_back {
+	background: url("https://ik.imagekit.io/1xa1de3jal/Games/pool2__2__jCyRUXUzs.jpg");
+}
+#vr {
+	box-shadow: 0px 0px 150px -45px rgba(22, 74, 141, 0.7);
+	margin-bottom: 200px;
+}
+#vr:hover {
+	box-shadow: 0px 0px 120px -55px rgba(22, 74, 141, 0.7);
+}
+.vr_back {
+	background: url("https://ik.imagekit.io/1xa1de3jal/Games/vr_AV7y22hyxU.jpg");
+}
+#arch {
+	box-shadow: 0px 0px 150px -45px rgba(226, 214, 50, 0.7);
+	margin-bottom: 200px;
+}
+#arch:hover {
+	box-shadow: 0px 0px 120px -55px rgba(226, 214, 50, 0.7);
+}
+.arch_back {
+	background: url("https://ik.imagekit.io/1xa1de3jal/Games/archery_e-bJNTQ3I.jpg");
+}
+#swimming {
+	box-shadow: 0px 0px 150px -45px rgba(0, 119, 190, 0.7);
+	margin-bottom: 200px;
+}
+#swimming:hover {
+	box-shadow: 0px 0px 120px -55px rgba(0, 119, 190, 0.7);
+}
+.swimming_back {
+	background: url("https://ik.imagekit.io/1xa1de3jal/Games/Swimming_S5Kr8GhbL.jpg");
+}
+#rock {
+	box-shadow: 0px 0px 150px -45px rgba(201, 16, 32, 0.7);
+	margin-bottom: 200px;
+}
+#rock:hover {
+	box-shadow: 0px 0px 120px -55px rgba(201, 16, 32, 0.7);
+}
+.rock_back {
+	background: url("https://ik.imagekit.io/1xa1de3jal/Games/rock_climbing__2__np5WhxI1z.jpg");
+}
+#cycling {
+	box-shadow: 0px 0px 150px -45px rgba(86, 196, 23, 0.7);
+	margin-bottom: 200px;
+}
+#cycling:hover {
+	box-shadow: 0px 0px 120px -55px rgba(86, 196, 23, 0.7);
+}
+.cycling_back {
+	background: url("../images/cycling.webp");
+}
+
+.cp-text{ color: rgba(255,255,255,.7); 
+	text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+	text-align: center;
+	width: 100%;
+	background-color: #000000;
+	padding: 0.5%;
+}
